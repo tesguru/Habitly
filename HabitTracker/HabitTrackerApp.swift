@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct HabitTrackerApp: App {
+    @State private var viewModel = HabitViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(viewModel: viewModel)
         }
     }
 }
